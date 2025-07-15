@@ -1,0 +1,124 @@
+.navbar{
+   background: rgba(0, 0, 0, 0.205);
+    height: 5rem;
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+ 
+.logo{
+    object-fit:cover;
+    height: 4rem;
+    width: 5rem;
+}
+
+.nav-links-items{
+    margin: 1rem;
+    cursor: pointer;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.nav-links-items:hover{
+    color:aqua;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid aqua;
+}
+
+.btn{ 
+    background: white;
+    color:black;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.5rem;
+    border-radius: 2rem;
+    font-weight: bold;
+}
+
+.btn:hover{
+    background-color: aqua;
+    box-shadow: 0 0 25px #00ffff; 
+}
+
+ /* .btnImg{
+    color:azure;
+    height: 1rem;
+    margin: 1rem 1rem;
+}  */
+
+.btnFlex {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;  
+}
+
+.btnImg {
+  height: 2rem;
+  width: auto;
+  opacity: 0;
+  object-fit: contain;
+  background-color: transparent;
+}
+
+.btnImg {
+    opacity: 1;
+    display:flex;
+}
+
+.btnText {
+  font-weight: bolder;
+  font-size: 2rem;
+}  
+   
+.active{
+    color:aqua;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid aqua; 
+}
+
+.mobMenu{
+    display:none;
+    object-fit:cover;
+    height: 1.8rem;
+}
+
+.navMenu{
+    position: absolute;
+    top: 4rem;
+    right:2rem;
+    z-index:2;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    height: fit-content;
+    min-width:15rem;
+    background: rgb(20, 20,20);
+    border-radius: 1rem;
+}
+
+.Menu-item{
+    color:white;
+    padding: 0.5rem 3rem;
+    margin: 0.25rem;
+    background:rgb(20, 20,20);
+}
+
+@media screen and (max-width: 700px){
+    .mobMenu{
+        display: flex;
+    }
+    .nav-links{
+        display: none;
+    }
+    .btn{ 
+        display: none;
+    }
+}
