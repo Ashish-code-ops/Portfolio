@@ -11,9 +11,9 @@ function Contact() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    const name = form.current.elements.from_name.value.trim();
-    const email = form.current.elements.your_email.value.trim();
-    const message = form.current.elements.message.value.trim();
+    const name = form.current.elements.from_name?.value.trim();
+    const email = form.current.elements.your_email?.value.trim();
+    const message = form.current.elements.message?.value.trim();
      if(!name || !email || !message) {
         alert("please fill in all required fields.");
         return;
@@ -54,8 +54,8 @@ function Contact() {
             <span className="contactDesc">Feel free to contact me</span>
 
             <form className="contactForm" ref={form} onSubmit={sendEmail}> 
-              <input type="text" className="name" required placeholder="Your Name" name="from_name" />
-              <input type="email" className="email" required placeholder="Your Email" name="your_email"  />
+              <input type="text" className="name" required placeholder="Your Name"  />
+              <input type="email" className="email" required placeholder="Your Email" />
               <textarea className="msg" name="message" required rows="5" placeholder="Your Message"  ></textarea>
               <button type="submit" value="submit" className='submitBtn'>Submit</button>
             </form>
