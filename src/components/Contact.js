@@ -11,19 +11,22 @@ function Contact() {
 
   const sendEmail = (e) => {
     e.preventDefault();
+     const isValid = Form.current.checkValidity();
 
+     if(!isValid) {
+        alert("please fill in all required fields.");
+        return;
+     } 
     emailjs
       .sendForm('service_jw44ahh', 'template_bgqgcb9', form.current, {
         publicKey: '3w_JzAPOFPLf8YkDo',
       })
       .then(
         () => {
-          console.log('SUCCESS!');
-          form.current.from_name.value = "";
-              form.current.your_email.value = "";
-              form.current.message.value = "";
+           alert("Form Submitted!!");
+           console.log('SUCCESS!');
+           form.current.reset();
         },
-
         (error) => {
           console.log('FAILED...', error.text);
         },
@@ -53,7 +56,7 @@ function Contact() {
               <input type="text" className="name" required placeholder="Your Name" name="from_name" />
               <input type="email" className="email" required placeholder="Your Email" name="your_email"  />
               <textarea className="msg" name="message" required rows="5" placeholder="Your Message"  ></textarea>
-              <button type="submit" value="submit" className='submitBtn' onClick={()=>{alert("Form Submitted!!")}}>Submit</button>
+              <button type="submit" value="submit" className='submitBtn'>Submit</button>
             </form>
           </div>
        </section>
