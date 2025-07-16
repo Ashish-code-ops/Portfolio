@@ -53,7 +53,7 @@ function Contact() {
               <input type="text" className="name" placeholder="Your Name" name="from_name" required />
               <input type="email" className="email" placeholder="Your Email" name="your_email" required />
               <textarea className="msg" name="message"  rows="5" placeholder="Your Message" required ></textarea>
-              <button type="submit" value="send" className='submitBtn' onClick={()=>{alert("Form Submitted!!")}}>Submit</button>
+              <button type="submit" value="submit" className='submitBtn' onClick={()=>{alert("Form Submitted!!")}}>Submit</button>
             </form>
           </div>
        </section>
