@@ -42,8 +42,8 @@ function Contact() {
             <p>Here you can connect with me on my social media</p>
 
             <div className="socialImgs">
-              <a href='#'><img src={LinkedIn} alt='LinkedIn' className='socialImg'/></a>
-              <a href='#'><img src={Github} alt='Github' className='socialImg'/></a>
+              <a href='https://www.linkedin.com/in/ashish-jha-18736932b/'><img src={LinkedIn} alt='LinkedIn' className='socialImg'/></a>
+              <a href='https://github.com/Ashish-code-ops/Portfolio'><img src={Github} alt='Github' className='socialImg'/></a>
               <a href='#'><img src={Insta} alt='Instagram' className='socialImg'/></a>
               <a href='#'><img src={Facebook} alt='Facebook' className='socialImg'/></a>
             </div>
