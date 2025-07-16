@@ -43,9 +43,9 @@ function Contact() {
 
             <div className="socialImgs">
               <a href="https://www.linkedin.com/in/ashish-jha-18736932b/" target="_blank" rel="noopener noreferrer className="socialLink"><img src={LinkedIn} alt='LinkedIn' className='socialImg'/></a>
-              <a href="https://github.com/Ashish-code-ops/Portfolio" target="_blank" rel="noopener noreferrer className="socialLink"><img src={Github} alt='Github' className='socialImg'/></a>
-              <a href='#'><img src={Insta} alt='Instagram' className='socialImg'/></a>
-              <a href='#'><img src={Facebook} alt='Facebook' className='socialImg'/></a>
+              <a href="https://github.com/Ashish-code-ops" target="_blank" rel="noopener noreferrer className="socialLink"><img src={Github} alt='Github' className='socialImg'/></a>
+              <a href='#' target="_blank" rel="noopener noreferrer className="socialLink"><img src={Insta} alt='Instagram' className='socialImg'/></a>
+              <a href='#' target="_blank" rel="noopener noreferrer className="socialLink"><img src={Facebook} alt='Facebook' className='socialImg'/></a>
             </div>
           </div>
 
