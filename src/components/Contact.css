@@ -28,6 +28,15 @@
     font-size: medium;
     font-weight: 300;
 }
+.socialLink {
+  display: inline-block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.socialLink:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
 
 .socialImgs{
     margin: 1rem 0;
