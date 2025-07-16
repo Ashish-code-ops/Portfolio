@@ -21,7 +21,9 @@ function intro() {
              visually appealing and user friendly websites.
         </p>
       <Link>
-        <button className='btn2'> 
+        <button className='btn2'  onClick={()  => {
+              document.getElementById("contactTitle").scrollIntoView({behavior: 'smooth'});
+      }}> 
           <img src={btnImg} alt='Img' className='btnImg2'/>
            Hire me
         </button>
