@@ -11,9 +11,10 @@ function Contact() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-     const isValid = Form.current.checkValidity();
-
-     if(!isValid) {
+    const name = form.current.elements.from_name.value.trim();
+    const email = form.current.elements.your_email.value.trim();
+    const message = form.current.elements.message.value.trim();
+     if(!name || !email || !message) {
         alert("please fill in all required fields.");
         return;
      } 
