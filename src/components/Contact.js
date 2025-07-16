@@ -54,8 +54,8 @@ function Contact() {
             <span className="contactDesc">Feel free to contact me</span>
 
             <form className="contactForm" ref={form} onSubmit={sendEmail}> 
-              <input type="text" className="name" required placeholder="Your Name" name="your_name" />
-              <input type="email" className="email" required placeholder="Your Email" name="your_name" />
+              <input type="text" className="name" required placeholder="Your Name" name="from_name" />
+              <input type="email" className="email" required placeholder="Your Email" name="your_email" />
               <textarea className="msg" name="message" required rows="5" placeholder="Your Message"  ></textarea>
               <button type="submit" value="submit" className='submitBtn'>Submit</button>
             </form>
